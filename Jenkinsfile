@@ -8,7 +8,7 @@ pipeline {
 
      ORGANIZATION_NAME = "privatestnsgithuborg"
      SERVICE_NAME = "fleetman-queue"
-     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
+     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}${SERVICE_NAME}:${BUILD_ID}"
    }
 
    stages {
