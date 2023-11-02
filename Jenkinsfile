@@ -16,9 +16,9 @@ pipeline {
          steps {
             cleanWs()
             echo "test test"
-            echo ${ORGANIZATION_NAME}
-            echo "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
-            git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
+            echo "${ORGANIZATION_NAME}"
+            // echo "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
+            // git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
          }
       }
       stage('Build') {
